@@ -1,0 +1,49 @@
+DetMatrixDeterminant//For 3x3 Matrixes only.
+====================
+
+package toS;
+import java.util.*;
+public class GetMatrixDeterminant {
+	public static void main(String args[]){
+
+int[][] a = {{0, 0, 0},{0, 0, 0}, {0, 0, 0}};
+        Scanner scanner = new Scanner(System.in);
+        
+        System.out.println("Name for [0][0]"+"\n");
+        a[0][0] = scanner.nextInt();
+        System.out.println("Name for [0][1]"+"\n");
+        a[0][1] = scanner.nextInt();
+        System.out.println("Name for [0][2]"+"\n");
+        a[0][2] = scanner.nextInt();
+        System.out.println("Name for [1][0]"+"\n");
+        a[1][0] = scanner.nextInt();
+        System.out.println("Name for [1][1]"+"\n");
+        a[1][1] = scanner.nextInt();
+        System.out.println("Name for [1][2]"+"\n");
+        a[1][2] = scanner.nextInt();
+        System.out.println("Name for [2][0]"+"\n");
+        a[2][0] = scanner.nextInt();
+        System.out.println("Name for [2][1]"+"\n");
+        a[2][1] = scanner.nextInt();
+        System.out.println("Name for [2][2]"+"\n");
+        a[2][2] = scanner.nextInt();
+
+System.out.print(a[0][0]+" "+a[0][1]+" "+a[0][2]+"\n");
+System.out.print(a[1][0]+" "+a[1][1]+" "+a[1][2]+"\n");
+System.out.print(a[2][0]+" "+a[2][1]+" "+a[2][2]+"\n"+"\n");
+
+int triangleR1 = a[0][0]*a[1][1]*a[2][2];
+int triangleR2 = a[1][0]*a[2][1]*a[0][2];
+int triangleR3 = a[0][1]*a[1][2]*a[2][0];
+int triangleR = triangleR1+triangleR2+triangleR3;
+
+int triangleB1 = a[0][2]*a[2][0]*a[1][1];
+int triangleB2 = a[0][0]*a[1][2]*a[2][1];
+int triangleB3 = a[2][2]*a[1][0]*a[0][1];
+int triangleB = triangleB1+triangleB2+triangleB3; 
+
+int result = triangleR - triangleB;
+
+System.out.print(result);
+}
+}
