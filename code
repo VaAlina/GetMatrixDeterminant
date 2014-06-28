@@ -1,4 +1,4 @@
-DetMatrixDeterminant//For 3x3 and 2x2 matrixes only.
+GetMatrixDeterminant//For 3x3 and 2x2 matrixes only.
 ====================
 package toS;
 import java.util.*;
@@ -67,7 +67,7 @@ System.out.print(result);
 }
 }
 
-DetMatrixDeterminant//For 3x3 Matrixes only.
+GetMatrixDeterminant//For 3x3 Matrixes only.
 ====================
 
 package toS;
